@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 0.7em;
+    margin-block: 1em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(25, 26, 36);
+    opacity: 0.94;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background-color: rgb(228, 76, 101);
+    border: 2px solid rgba(25, 26, 36, 0.933);
+}
+
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -73,7 +89,6 @@ body{
 }
 
 .img-bg-2{
-    height: 100vh;
     background-image: url(./Images/pic03.jpg);
     background-size: cover;
     background-position: center;
@@ -84,7 +99,6 @@ body{
 }
 
 .blue-div{
-    height: 100%;
     width: 35%;
     background-color: rgba(25, 26, 36,0.9);
     opacity: 0.94;
@@ -129,6 +143,13 @@ body{
     border-right: 7px solid rgb(57, 192, 136);
 } 
 
+.about{
+    transform: rotate(270deg);
+    background: -webkit-linear-gradient(rgb(228, 76, 101) 55%,magenta);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
 .green-div-2{
     display: none;
 }
@@ -159,6 +180,7 @@ footer{
 
 .dis{
     opacity: 0;
+    transition: 1s ease-out;
 }
  
 
@@ -307,6 +329,12 @@ footer{
         width: 100%;
         margin-top: 10%;
         height: 100%;
+    }
+
+    .about{
+        transform: rotate(0deg);
+        text-align: center;
+        width: 100%;
     }
     
     .blue-div-2{

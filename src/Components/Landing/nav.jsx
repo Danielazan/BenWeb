@@ -4,7 +4,6 @@ import {InView} from 'react-intersection-observer';
 import {Link} from "react-router-dom"
 import {BsChevronDown} from "react-icons/bs"
 import Img from "./Img/logo.jpg"
-import Pic from "./Img/pic.jpg"
 
 
 function nav() {
@@ -43,12 +42,6 @@ function nav() {
             </Container>
             </Navbar>
 
-            {/* <InView triggerOnce={true} threshold={0.3}>
-                {({ inView, ref, entry }) => (
-                
-                )}
-            </InView> */}
-
             <InView triggerOnce={false} threshold={0.5}>
                 {({ inView, ref, entry }) => (
                     <Container ref={ref} className={`${inView ? "fadebottom" : "dis"}  text-white  mt-5 con`}>
@@ -64,7 +57,7 @@ function nav() {
                                 <Col xs={12} lg={6} className="text-center">
                                     <center>
                                     <Card style={{ width: '18rem'}} className="rounded-circle bg-transparent me-lg-5 top">
-                                        <Card.Img className="rounded-circle" variant="top" src={Pic} />
+                                        <Card.Img className="rounded-circle" variant="top" src={Img} />
                                     </Card>
                                     </center>
                                 </Col>
