@@ -10,14 +10,14 @@
 }
 
 ::-webkit-scrollbar-track{
-    background-color: rgb(25, 26, 36);
+    background-color:rgb(241, 241, 241);
     opacity: 0.94;
 }
 
 ::-webkit-scrollbar-thumb{
     border-radius: 100vw;
-    background-color: rgb(228, 76, 101);
-    border: 2px solid rgba(25, 26, 36, 0.933);
+    background-color: rgb(168, 168, 168);
+    border: 2px solid rgba(241,241,241);
 }
 
 body{
@@ -308,7 +308,11 @@ footer{
 
 .erat{
     border-bottom: 3px solid  rgb(252, 79, 79);
-    width: 15%;
+    width: fit-content;
+}
+
+.gem{
+    color: rgb(245, 106, 106);
 }
 
 @media screen and (max-width: 980px){
@@ -319,6 +323,7 @@ footer{
     .con .op{
         margin-top: 10vh;
     }
+
     .img-bg-2 {
         background-attachment: scroll;
         height: 30vh;
@@ -373,7 +378,4 @@ footer{
         justify-content: flex-start;
     }
 
-    .erat{
-        width: 40%;
-    }
 }

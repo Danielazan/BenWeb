@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import {Container} from "react-bootstrap"
 import Banner from './Banner'
 import Icons from './Icons.jsx'
+import Card from "./Card"
 
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
         <Container className=''>
             <Banner/>
             <Icons/>
+            <Card/>
         </Container>
     </React.Fragment>
   )

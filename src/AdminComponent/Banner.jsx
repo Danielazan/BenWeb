@@ -2,7 +2,7 @@ import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Row,Col,Container,Card,Button} from "react-bootstrap"
 import {FaTwitter,FaFacebookF,FaSnapchatGhost,FaInstagram} from "react-icons/fa"
-import Pic from "../Img/pic10.jpg"
+import Pic from "../Images/pic10.jpg"
 
 function Banner() {
   return (
@@ -10,15 +10,15 @@ function Banner() {
         <Container className='mt-lg-5'>
 
             <Row>
-                <Col xs={9} lg={6}>
+                <Col xs={9} lg={6} className="mt-1">
                     <h6 style={{color:"rgb(61, 68, 73)"}}>Editorial <span style={{color:"rgb(127, 136, 143)"}}>by HTML5 UP</span></h6>
                 </Col>
 
                 <Col xs={3} lg={6} className='d-flex justify-content-end'>
-                    <a href="" style={{color:"rgb(127, 136, 143)"}} className='social'><FaTwitter size={"1.3em"} className="mx-2 social" /></a>
-                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaFacebookF size={"1.3em"} className="mx-2 social" /></a>
-                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaSnapchatGhost size={"1.3em"} className="mx-2 social" /></a>
-                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaInstagram size={"1.3em"} className="mx-2 social"/></a>
+                    <a href="" style={{color:"rgb(127, 136, 143)"}} className='social'><FaTwitter size={"1.3em"} className="mx-1 mx-lg-2 social" /></a>
+                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaFacebookF size={"1.3em"} className="mx-1 mx-lg-2 social" /></a>
+                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaSnapchatGhost size={"1.3em"} className="mx-1 mx-lg-2 social" /></a>
+                    <a href="" style={{color:"rgb(127, 136, 143)"}}><FaInstagram size={"1.3em"} className="mx-1 mx-lg-2 social"/></a>
                 </Col>
             </Row>
 
@@ -43,7 +43,6 @@ function Banner() {
             </Row>
 
             <hr className='hl'/>
-
 
         </Container>
     </React.Fragment>

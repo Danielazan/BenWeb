@@ -1,9 +1,9 @@
 import './App.css';
-import Landing from './Components/Landing/Home';
+import Landing from './Components/Home';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Signup from './Components/Signup';
-import Home from './Components/Home/Home';
+import Signup from './Components/Login';
+import Home from './Components/Admin';
 
 
 

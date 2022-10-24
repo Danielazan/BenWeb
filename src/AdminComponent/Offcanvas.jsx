@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Card,Dropdown,ListGroup,Offcanvas,Button,InputGroup,Form} from "react-bootstrap";
 import {HiMenu} from "react-icons/hi"
-import bear from "../Img/pic07.jpg"
-import mount from "../Img/pic08.jpg"
-import laptop from "../Img/pic09.jpg"
+import bear from "../Images/pic07.jpg"
+import mount from "../Images/pic08.jpg"
+import laptop from "../Images/pic09.jpg"
 import {HiMail} from "react-icons/hi"
 import {FaPhone,FaHome} from "react-icons/fa"
 
@@ -32,7 +32,7 @@ function Offc() {
       <>
        <div className='menu'> <Button variant="none" onClick={toggleShow} className="me-2"><HiMenu size={"2em"} style={{color:'rgb(245, 106, 106)'}}/></Button></div>
 
-        <Offcanvas style={{backgroundColor:"rgb(245, 246, 247)",}} show={show} onHide={handleClose} {...props}>
+        <Offcanvas style={{backgroundColor:"rgb(245, 246, 247)"}} className="ree" show={show} onHide={handleClose} {...props}>
 
           <Offcanvas.Header closeButton>
 
