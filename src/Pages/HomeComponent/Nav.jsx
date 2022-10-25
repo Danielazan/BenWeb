@@ -48,7 +48,7 @@ function nav() {
                         <Row className='op'>
                                 <Col xs={12} lg={6} className="text-center">
                                     
-                                    <h1 className='mt-5 ms-lg-5'>The future has landed</h1>
+                                    <h1 className='mt-5 ms-lg-5'>Catholic Charismatic Renewal Of Nigeria <span style={{color:'yellow'}}>Nkwo-Nike Deanery Enugu</span></h1>
 
                                     <p className='my-4 ms-lg-5' style={{fontSize:"17px"}}>And there are no hoverboards or flying cars. <br />
                                     Just apps. Lots of mother flipping apps.</p>
