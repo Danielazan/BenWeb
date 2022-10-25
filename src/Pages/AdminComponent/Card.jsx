@@ -1,7 +1,7 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import {Container,Row,Col,Card,Button} from "react-bootstrap"
-import bear from "../Images/pic03.jpg"
+import {Row,Col,Card,Button} from "react-bootstrap"
+import bear from "Assets/Images/pic03.jpg"
 
 function Cards() {
   return (

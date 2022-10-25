@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import {Row,Col,Container,Card} from "react-bootstrap"
+import {Row,Col,Container} from "react-bootstrap"
 import {SlDiamond} from "react-icons/sl"
 import {FaPaperPlane,FaRocket,FaSignal} from "react-icons/fa"
 

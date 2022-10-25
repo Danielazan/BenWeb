@@ -13,10 +13,8 @@ function Slide() {
             .then(res => {
                 setArray(res.data)
 
-                console.log(array)
-
             })
-    }, []);
+    });
 
   return (
     <React.Fragment>

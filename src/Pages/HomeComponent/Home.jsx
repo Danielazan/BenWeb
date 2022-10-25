@@ -1,11 +1,11 @@
 import React from 'react'
 import {Container} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Nava from '../Landing/nav';
-import Info from '../Landing/info';
-import Slide from "../Landing/slide-sec"
-import Icon from '../Landing/icon';
-import Footer from '../Landing/footer';
+import Nava from './Nav';
+import Info from './Info';
+import Slide from "./Slide-sec"
+import Icon from './Icon';
+import Footer from './Footer';
 
 
 function Home() {

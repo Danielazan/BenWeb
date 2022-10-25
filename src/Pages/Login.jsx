@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container,Col,Form,Row} from "react-bootstrap"
-import Style from "../Style/Style.css"
+import Style from "Style/Style.css"
 import {AiOutlineTwitter,AiOutlineInstagram,AiOutlineGithub,AiOutlineMail} from "react-icons/ai"
 
 

@@ -32,7 +32,7 @@ body{
 
 .banner{
     height: 100vh;
-    background-image: url(./Images/pic08.jpg);
+    background-image: url(./Assets/Images/pic08.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,19 +43,19 @@ body{
 
 @keyframes bg-change {
     20%{
-        background-image: url(./Images/pic07.jpg);
+        background-image: url(./Assets/Images/pic07.jpg);
     }
 
     40%{
-        background-image: url(./Images/pic06.jpg);
+        background-image: url(./Assets/Images/pic06.jpg);
     }
 
     60%{
-        background-image: url(./Images/pic11.jpg);
+        background-image: url(./Assets/Images/pic11.jpg);
     }
 
     80%{
-        background-image: url(./Images/pic05.jpg);
+        background-image: url(./Assets/Images/pic05.jpg);
     }
 }
 
@@ -74,7 +74,7 @@ body{
 
 .img-bg-1{
     height: 60vh;
-    background-image: url(./Images/pic12.jpg);
+    background-image: url(./Assets/Images/pic12.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body{
 }
 
 .img-bg-2{
-    background-image: url(./Images/pic03.jpg);
+    background-image: url(./Assets/Images/pic03.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body{
 
 .img-bg-3{
     height: 100vh;
-    background-image: url(./Images/pic04.jpg);
+    background-image: url(./Assets/Images/pic04.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,7 @@ body{
     transform: rotate(270deg);
     background: -webkit-linear-gradient(rgb(228, 76, 101) 55%,magenta);
     -webkit-background-clip:text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

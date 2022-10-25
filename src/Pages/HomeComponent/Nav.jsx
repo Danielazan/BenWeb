@@ -3,7 +3,7 @@ import {Container,Col,Row,Nav,Navbar,NavDropdown,Card} from "react-bootstrap"
 import {InView} from 'react-intersection-observer';
 import {Link} from "react-router-dom"
 import {BsChevronDown} from "react-icons/bs"
-import Img from "./Img/logo.jpg"
+import Img from "Assets/Images/logo.jpg"
 
 
 function nav() {

@@ -6,7 +6,7 @@
 
 .bg-slide{
     min-height: 100vh;
-    background-image: url(../Images/bg01.jpg);
+    background-image: url(../Assets/Images/bg01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     animation: bg 18s ease-in-out infinite;
@@ -34,17 +34,17 @@
 @keyframes bg {
 
     0%{
-        background-image: url(../Images/bg01.jpg);
+        background-image: url(../Assets/Images/bg01.jpg);
         background-position: center left;
     }
 
     25%{
-        background-image: url(../Images/bg02.jpg);
+        background-image: url(../Assets/Images/bg02.jpg);
         background-position: center center;
     }
 
     55%{
-        background-image: url(../Images/bg03.jpg);
+        background-image: url(../Assets/Images/bg03.jpg);
         background-position: center right;
     }
 

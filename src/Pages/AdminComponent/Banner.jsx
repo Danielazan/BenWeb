@@ -2,7 +2,7 @@ import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Row,Col,Container,Card,Button} from "react-bootstrap"
 import {FaTwitter,FaFacebookF,FaSnapchatGhost,FaInstagram} from "react-icons/fa"
-import Pic from "../Images/pic10.jpg"
+import Pic from "Assets/Images/pic10.jpg"
 
 function Banner() {
   return (

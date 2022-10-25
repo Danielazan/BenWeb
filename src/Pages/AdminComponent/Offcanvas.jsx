@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Card,Dropdown,ListGroup,Offcanvas,Button,InputGroup,Form} from "react-bootstrap";
 import {HiMenu} from "react-icons/hi"
-import bear from "../Images/pic07.jpg"
-import mount from "../Images/pic08.jpg"
-import laptop from "../Images/pic09.jpg"
+import bear from "Assets/Images/pic07.jpg"
+import mount from "Assets/Images/pic08.jpg"
+import laptop from "Assets/Images/pic09.jpg"
 import {HiMail} from "react-icons/hi"
 import {FaPhone,FaHome} from "react-icons/fa"
 
