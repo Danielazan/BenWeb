@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import {Container,Row,Col} from "react-bootstrap"
 import Offc from "Pages/AdminComponent/Offcanvas.jsx"
 import Main from 'Pages/AdminComponent/Main.jsx'
+import Style from "Pages/AdminComponent/Style/Style.css"
 
 
 

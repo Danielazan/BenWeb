@@ -6,6 +6,7 @@ import Info from './Info';
 import Slide from "./Slide-sec"
 import Icon from './Icon';
 import Footer from './Footer';
+import Style from "Pages/HomeComponent/Style/Style.css"
 
 
 function Home() {

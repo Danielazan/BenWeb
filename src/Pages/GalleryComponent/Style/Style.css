@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gallery-txt{
+    line-height: 30px;
+}
+
+.side-h2{
+    border-left: 2px solid rgb(84, 128, 241);
+}
+
+.side-card{
+    width: 18rem;
+    position: relative;
+}
+
+.side-btn{
+    color: rgb(84, 128, 241);
+    background-color: transparent;
+    border: none;
+}
+
+.side-img{
+    height: 45vh;
+}
+
+.side-body{
+    position: absolute;
+    margin-top: 25vh;
+}
+
+@media screen and (max-width: 980px){
+    .side-card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .side-body{
+        margin-top: 40%;
+    }
+}

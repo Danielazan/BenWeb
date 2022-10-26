@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container,Col,Form,Row} from "react-bootstrap"
-import Style from "Style/Style.css"
+import Style from "./Style/Style.css"
 import {AiOutlineTwitter,AiOutlineInstagram,AiOutlineGithub,AiOutlineMail} from "react-icons/ai"
 
 
@@ -9,7 +9,7 @@ function Signup() {
     <Container fluid className='bg-slide'>
         <Row>
             <Col xs={12} lg={5}>
-               <Container className='text-white con'>
+               <Container className='text-white eve'>
 
                 <h1 className='ms-lg-5'>Eventually</h1>
 
