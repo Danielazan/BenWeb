@@ -14,7 +14,6 @@
 
 .side-card{
     width: 18rem;
-    position: relative;
 }
 
 .side-btn{
@@ -22,14 +21,13 @@
     background-color: transparent;
     border: none;
 }
-
+/* 
 .side-img{
-    height: 45vh;
-}
+    height: 44vh;
+} */
 
 .side-body{
-    position: absolute;
-    margin-top: 25vh;
+    /* margin-top: 25vh; */
 }
 
 @media screen and (max-width: 980px){

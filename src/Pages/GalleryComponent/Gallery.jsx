@@ -18,7 +18,7 @@ function Gallery() {
 
           <Col xs={12} lg={6}><Main/></Col>
 
-          <Col xs={12} lg={4}><Side/></Col>
+          <Col xs={12} lg={5}><Side/></Col>
 
           <Col xs={12} lg={1}></Col>
 

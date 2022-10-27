@@ -12,7 +12,7 @@ function Side() {
             <div className='ms-0 ms-lg-4'>
                 <h2 className='side-h2 ps-3'>Similar News</h2>
 
-                <Card className="my-5 bg-dark side-card border-0">
+                <Card className="my-5 bg-dark side-card border-0  bg-transparent">
                     <Card.Img variant="top" src={pic} className="rounded-1 side-img" />
                     <Card.Body className='mx-0 px-0 side-body rounded-1 '>
                         <Button  className='ms-3 side-btn p-2 my-2'><IoIosArrowRoundBack size={"1.4em"}/>More Details</Button>
@@ -22,7 +22,7 @@ function Side() {
                     </Card.Body>
                 </Card>
 
-                <Card className="my-5 bg-dark side-card border-0">
+                <Card className="my-5 bg-transparent side-card border-0">
                     <Card.Img variant="top" src={pic2} className="rounded-1 side-img" />
                     <Card.Body className='mx-0 px-0 side-body rounded-1 '>
                         <Button  className='ms-3 side-btn p-2 my-2'><IoIosArrowRoundBack size={"1.4em"}/>More Details</Button>
