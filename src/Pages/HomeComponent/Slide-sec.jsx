@@ -15,7 +15,7 @@ function Slide() {
     useEffect(() => {
        const Getnews = async ()=>{
 
-        const url= "http://localhost:5000/api/news"
+        const url= "https://bensite-api.onrender.com/api/news"
 
         const response = await axios.get(url)
 
