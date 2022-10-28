@@ -2,19 +2,41 @@ import axios from 'axios';
 import React,{useEffect, useState} from 'react'
 import {Container,Button} from "react-bootstrap"
 import {InView} from 'react-intersection-observer';
+import {useNewsContext} from "Hook/useNewsContext"
+
 
 
 function Slide() {
 
-    const [array, setArray] = useState([])
+    // const [array, setArray] = useState([])
+
+    const {News,dispatch}= useNewsContext()
 
     useEffect(() => {
-        axios( "https://bensite-api.onrender.com/api/news")
-            .then(res => {
-                setArray(res.data)
+       const Getnews = async ()=>{
 
-            })
-    });
+        const url= "http://localhost:5000/api/news"
+
+        const response = await axios.get(url)
+
+        const json = await response.data
+
+      
+            dispatch({type:"SET NEWS", payload:json})
+
+            console.log(dispatch)
+        
+
+        dispatch({type:"SET NEWS", payload:json})
+
+        console.log(json)
+
+       
+       }
+       Getnews()
+       console.log(News)
+      
+    }, [dispatch])
 
   return (
     <React.Fragment>
@@ -23,8 +45,8 @@ function Slide() {
                 {({ inView, ref, entry }) => (
                 <div fluid ref={ref} className={`${inView ? "right" : " "} blue-div text-white`}>  
                         <h1 className='ms-3 my-4'>News Updates</h1>
-                        {
-                        array.map(data =>{
+                        { News &&
+                        News.map(data =>{
                             return(
                                 <div className='ms-3' key={data._id}>                               
                                     <h2 style={{color:' rgb(84, 128, 241)'}}>{data.title}</h2>
@@ -46,8 +68,8 @@ function Slide() {
 
         <Container fluid className='blue-div-2 text-white'>
             <div>
-                {
-                    array.map(data =>{
+                { News &&
+                    News.map(data =>{
                         return(
                             <div className='ms-3' key={data._id}>                               
                                 <h2 style={{color:' rgb(84, 128, 241)'}}>{data.title}</h2>
