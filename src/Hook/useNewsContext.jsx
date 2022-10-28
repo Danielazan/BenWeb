@@ -1,4 +1,4 @@
-import { NewsContext} from '../Context/NewsContext'
+import { NewsContext} from 'Context/NewsContext'
 import {useContext} from 'react'
 
 export const useNewsContext =()=>{
@@ -7,6 +7,5 @@ export const useNewsContext =()=>{
     if(!context){
         throw Error("useNewsContext must be in NewsContext Provider")
     }
-
     return context
 }
