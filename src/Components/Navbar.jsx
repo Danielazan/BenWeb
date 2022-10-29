@@ -16,7 +16,10 @@ function Navigate() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:"rgb(228, 76, 101)"}} />
                 <Navbar.Collapse id="basic-navbar-nav" >
                 <Nav className="me-auto mar">
-                    <Nav.Link className='text-white mx-1' ><Link className='links' style={{textDecoration:"none"}} Navigate  to="/Home">Home</Link></Nav.Link>
+                    <Nav.Link className='text-white mx-1' ><Link className='links' style={{textDecoration:"none"}} Navigate  to="/">Home</Link></Nav.Link>
+
+                    <Nav.Link className='text-white mx-1' ><Link className='links' style={{textDecoration:"none"}} Navigate  to="/Admin">Admin</Link></Nav.Link>
+
 
                     <NavDropdown className="mx-1 text-white" title={"Layouts"} id="basic-nav-dropdown">
                         <NavDropdown.Item  href="#action/3.1"><Link style={{color:"black",textDecoration:"none"}} Navigate  to="">Action</Link></NavDropdown.Item>

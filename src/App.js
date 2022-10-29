@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Signup from './Pages/LoginComponent/Login';
 import Home from './Pages/AdminComponent/Admin';
 import Gallery from  "Pages/GalleryComponent/Gallery"
+import Admin from 'Pages/Admin2Component/Admin';
 
 
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='/Signup' element={<Signup/>}/>
             <Route path='/Home' element={<Home/>}/>
             <Route path='/Gallery' element={<Gallery/>}/>
+            <Route path='/Admin' element={<Admin/>}/>
           </Routes>
        </BrowserRouter>
     </main>
