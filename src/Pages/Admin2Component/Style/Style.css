@@ -12,8 +12,11 @@
 .widget-p{
     position: relative;
 }
-
+.sideList{
+    background:black
+}
 .widget{
+    padding-left: 5px;
     position: fixed;
     top: 100px;
     left: 1;
@@ -52,6 +55,17 @@ li{
     color: white;
     background-color: rgb(61, 176, 255);
     border-radius: 5px;
+}
+.format{
+    border-left: none;
+    border-top: none;
+    border-bottom: white;
+    background: transparent;
+    width: 17rem;
+
+}
+.format::placeholder{
+    color: rgb(88, 77, 55);
 }
 
 .main-col{
