@@ -6,6 +6,7 @@ function Sectiontrack() {
     <React.Fragment>
        <section className='widget'>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label className="text-white">Email address</Form.Label>
@@ -41,6 +42,9 @@ function Sectiontrack() {
                 <li><a href="#cardwidget" className='list'>Image list widget</a></li>
             </ul>
 >>>>>>> 40ca269e2292d27486ea00ec34426ac8ed273d82
+=======
+
+>>>>>>> b3100703a80e9c3aca127937f28539cc88e65441
        </section>
     </React.Fragment>
   )
