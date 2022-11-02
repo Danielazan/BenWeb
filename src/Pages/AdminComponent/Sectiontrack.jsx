@@ -1,12 +1,11 @@
 import React from 'react'
-import {Form,Row,Col } from 'react-bootstrap'
+import {Form,} from 'react-bootstrap'
 
 function Sectiontrack() {
   return (
     <React.Fragment>
        <section className='widget'>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label className="text-white">Email address</Form.Label>
@@ -23,7 +22,7 @@ function Sectiontrack() {
               />
             </Form.Group>
           </Form>
-=======
+
         <ul>
                 <li><a href="#cardwidget" className='list'>Card Widget</a></li>
                 <li><a href="#listwidget" className='list'>List widget</a></li>
@@ -32,10 +31,7 @@ function Sectiontrack() {
                 <li><a href="#cardwidget" className='list'>User list widget</a></li>
                 
             </ul>
->>>>>>> 40ca269e2292d27486ea00ec34426ac8ed273d82
-=======
 
->>>>>>> b3100703a80e9c3aca127937f28539cc88e65441
        </section>
     </React.Fragment>
   )
