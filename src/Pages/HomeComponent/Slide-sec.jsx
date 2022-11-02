@@ -21,16 +21,18 @@ function Slide() {
         <section fluid className='img-bg-2' id='two'>
             <InView triggerOnce={true}  threshold={0.1}>
                 {({ inView, ref, entry }) => (
-                <div fluid ref={ref} className={`${inView ? "right" : " "} blue-div text-white`}>  
+                <div fluid ref={ref} className={`${inView ? "right" : "dis"} blue-div text-white`}>  
                         <h1 className='ms-3 my-4'>News Updates</h1>
                         {
                         array.map(data =>{
                             return(
                                 <div className='ms-3' key={data._id}>                               
-                                    <h2 style={{color:' rgb(84, 128, 241)'}}>{data.title}</h2>
-                                    <p>Released On : {data.createdAt}</p>  
+                                    <h2 style={{color:'yellow'}}>{data.title}</h2>
+                                     
                                     <p>{data.News}</p>
-                                    <hr  style={{backgroundColor:' rgb(84, 128, 241)',border:"none",height:"3px"}}/>
+
+                                    <p>Released On : {data.createdAt}</p> 
+                                    <hr  style={{backgroundColor:'yellow',border:"none",height:"3px"}}/>
                                 </div>
                             )
                         })
@@ -46,14 +48,16 @@ function Slide() {
 
         <Container fluid className='blue-div-2 text-white'>
             <div>
+            <h1 className='ms-3 my-2'>News Updates</h1>
+
                 {
                     array.map(data =>{
                         return(
                             <div className='ms-3' key={data._id}>                               
-                                <h2 style={{color:' rgb(84, 128, 241)'}}>{data.title}</h2>
-                                <p>Released On : {data.createdAt}</p>  
+                                <h2 style={{color:'yellow'}}>{data.title}</h2>
                                 <p>{data.News}</p>
-                                <hr  style={{backgroundColor:' rgb(84, 128, 241)',border:"none",height:"3px"}}/>
+                                <p>Released On : {data.createdAt}</p>  
+                                <hr  style={{backgroundColor:'yellow',border:"none",height:"3px"}}/>
                             </div>
                         )
                     })
@@ -65,7 +69,7 @@ function Slide() {
          {/* Section 4  - Green Div*/}
 
         <section fluid className='img-bg-3'>
-            <InView triggerOnce={false} threshold={0.4}>
+            <InView triggerOnce={false} threshold={0.1}>
                 {({ inView, ref, entry }) => (
                 <div ref={ref} fluid className={`${inView ? "left" : "dis"} green-div text-white`}>
    
