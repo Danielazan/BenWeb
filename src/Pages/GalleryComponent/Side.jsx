@@ -14,7 +14,7 @@ function Side() {
 
                 <Card className="my-5 bg-dark side-card border-0  bg-transparent">
                     <Card.Img variant="top" src={pic} className="rounded-1 side-img" />
-                    <Card.Body className='mx-0 px-0 side-body rounded-1 '>
+                    <Card.Body className='mx-0 px-0 bg-transparent side-body rounded-1 '>
                         <Button  className='ms-3 side-btn p-2 my-2'><IoIosArrowRoundBack size={"1.4em"}/>More Details</Button>
 
                         <Card.Title className='side-h2 ps-3'>ESL One Los Angeles nur noch online</Card.Title>
@@ -24,7 +24,7 @@ function Side() {
 
                 <Card className="my-5 bg-transparent side-card border-0">
                     <Card.Img variant="top" src={pic2} className="rounded-1 side-img" />
-                    <Card.Body className='mx-0 px-0 side-body rounded-1 '>
+                    <Card.Body className='mx-0 px-0 bg-transparent side-body rounded-1 '>
                         <Button  className='ms-3 side-btn p-2 my-2'><IoIosArrowRoundBack size={"1.4em"}/>More Details</Button>
 
                         <Card.Title className='side-h2 ps-3'>ESL One Los Angeles nur noch online</Card.Title>
