@@ -21,23 +21,9 @@
     background-color: transparent;
     border: none;
 }
-/* 
-.side-img{
-    height: 44vh;
-} */
-
-.side-body{
-    /* margin-top: 25vh; */
-}
 
 @media screen and (max-width: 980px){
     .side-card{
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 378px){
-    .side-body{
-        margin-top: 40%;
     }
 }

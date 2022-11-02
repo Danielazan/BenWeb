@@ -8,8 +8,6 @@ import {useNewsContext} from "Hook/useNewsContext"
 
 function Slide() {
 
-    // const [array, setArray] = useState([])
-
     const {News,dispatch}= useNewsContext()
 
     useEffect(() => {
