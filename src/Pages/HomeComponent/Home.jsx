@@ -7,7 +7,7 @@ import Slide from "./Slide-sec"
 import Icon from './Icon';
 import Footer from './Footer';
 import Style from "Pages/HomeComponent/Style/Style.css"
-import Serviceteam from './Serviceteam';
+import Serviceteam from '../../Components/Serviceteam';
 
 
 function Home() {
