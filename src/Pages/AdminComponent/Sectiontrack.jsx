@@ -16,6 +16,10 @@ function Sectiontrack() {
                 <li><a href="#cardwidget" className='list'>Product widget</a></li>
                 <li><a href="#cardwidget" className='list'>Reminder widget</a></li>
                 <li><a href="#cardwidget" className='list'>Image list widget</a></li>
+                <li><a href="#cardwidget" className='list'>Profile widget</a></li>
+                <li><a href="#cardwidget" className='list'>Product widget</a></li>
+                <li><a href="#cardwidget" className='list'>Reminder widget</a></li>
+                <li><a href="#cardwidget" className='list'>Image list widget</a></li>
             </ul>
        </section>
     </React.Fragment>
