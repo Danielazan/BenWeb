@@ -9,59 +9,65 @@
     justify-content: flex-end;
 }
 
-.off-can-nav{
-    border-bottom: 2px solid #dadfe1;
+.widget-p{
+    position: relative;
 }
 
-.off-h3{
-    border-bottom:3px solid rgb(245, 106, 106);
-    width: 20%;
-    font-weight: 700;
+.widget{
+    position: fixed;
+    top: 100px;
+    left: 1;
+    z-index: 3;
+    border-left: 1px solid rgb(146, 158, 164);
 }
 
-.link{
+.main-h2{
+    border-bottom: 1px solid rgb(146, 158, 164);
+}
+
+.main-border{
+    border: 1px solid rgb(146, 158, 164);  
+}
+
+li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.list{
     text-decoration: none;
-    color: rgb(90, 91, 95);
-    margin-left: -4%;
-}
-
-.hline{
-    background-color: rgb(252, 79, 79);
-    border: none;
-    height: 5px;
-    opacity: 1;
-}
-
-
-.social:hover{
-    color: rgb(245, 106, 106);
-    transition: 0.2s ease-in;
-}
-
-.hl{
-    background-color: rgb(221, 225, 227);
-    height: 2px;
-    border: none;
-    opacity: 1;
-}
-
-.erat{
-    border-bottom: 3px solid  rgb(252, 79, 79);
-    width: fit-content;
-}
-
-.gem{
-    color: rgb(245, 106, 106);
-}
-
-.off-h{
-    border-bottom:3px solid rgb(245, 106, 106);
-    width: 45%;
+    color: rgb(146, 158, 164);
     font-weight: 700;
+}
+
+.list:hover{
+    color: rgb(54, 170, 140);
 }
 
 .txt{
-    color:rgb(127, 136, 143)
+    color: rgb(146, 158, 164);
+}
+
+.icon{
+    color: white;
+    background-color: rgb(61, 176, 255);
+    border-radius: 5px;
+}
+
+.main-col{
+    margin-top: -12%;
+}
+
+.card-body{
+    background-color:rgba(65, 77, 87, 0.552);
+}
+
+.side-link{
+    color: white;
+}
+
+.side-link:hover{
+    color: rgb(54, 170, 140);
 }
 
 @media screen and (max-width: 980px){
@@ -70,4 +76,9 @@
         justify-content: flex-start;
     }
 
+    .main-col{
+        margin-top: 0;
+    }
+
 }
+

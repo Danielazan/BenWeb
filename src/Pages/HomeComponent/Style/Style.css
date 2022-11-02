@@ -65,9 +65,15 @@
     border-top: 7px solid rgb(228, 76, 101);
 }
 
+.service{
+    background-color: rgb(25, 26, 36);
+    opacity: .94;
+    border-top: 7px solid rgb(228, 76, 101);
+}
 
 .img-bg-2{
-    background-image: url(Assets/Images/pic03.jpg);
+    height: 100vh;
+    background-image: url(Assets/Images/pic15.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,7 +86,8 @@
     width: 35%;
     background-color: rgba(25, 26, 36,0.9);
     opacity: 0.94;
-    border-left: 7px solid rgb(84, 128, 241);
+    border-left: 7px solid yellow;
+    overflow-y: scroll;
 } 
 
 .blue-div-2{
@@ -148,6 +155,11 @@
     opacity: 1;
 }
 
+.ser-card{
+    box-shadow: 1px 1px 5px 6px #2a2a30;
+    background-color: #1c1d26;
+}
+
 .con{
     margin-top: 20vh;
 }
@@ -161,8 +173,18 @@ footer{
 }
 
 .dis{
+    animation: disappear 1s ease-out;
     opacity: 0;
-    transition: 1s ease-out;
+}
+
+@keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
 }
  
 .fade{
@@ -264,7 +286,7 @@ footer{
     }
     
     .blue-div-2{
-        border-top: 7px solid rgb(84, 128, 241);
+        border-top: 7px solid yellow;
         background-color: rgb(25, 26, 36);
         display: block;
     }
