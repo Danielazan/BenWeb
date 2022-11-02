@@ -17,7 +17,7 @@ function Admin() {
 
                 <Col xs={12} lg={6}><Main/></Col>
 
-                <Col className='d-lg-block d-none widget-p' xs={12} lg={3}><Sectiontrack/></Col>
+                <Col className='widget-p' xs={12} lg={3}><Sectiontrack/></Col>
             </Row>
         </Container>
     </React.Fragment>
