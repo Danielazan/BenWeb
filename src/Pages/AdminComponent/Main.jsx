@@ -16,10 +16,11 @@ function Main() {
 
             <p>Card widget is created by using existing Bootstrap. card component with . card-img, . card-img-overlay and d-flex utilities.</p>
             <div className='main-border p-lg-3 p-0' >
-                <Card class="border-0 rounded-0 bg-transparent" style={{width:"18rem"}}>
-                    <Card.Img variant="top" src={pic13} className="rounded-0 side-img" />
-
+                <center>
+                <Card class="border-0 rounded-0 bg-transparent my-3" style={{width:"18rem"}}>
+                    <Card.Img variant="top" src={pic13} className="rounded-0 side-img py-3 bg-transparent" />
                 </Card>
+                </center>
             </div>
        </section>
 
@@ -56,12 +57,12 @@ function Main() {
             </div>
        </section>
 
-       <section id='statswidget' className='mt-5'>
+       <section id='statswidget' className='my-5'>
         <h4>Stats Widget</h4>
 
             <p>States widget is created by using Bootstrap . card component with . d-flex and background-color utilities.</p>
-            <div className='main-border p-3' >
-            <Card class="border-0 rounded-0 bg-transparent" style={{width:"70%"}}>
+            <div className='main-border p-3'>
+            <Card class="border-0 rounded-2 bg-primary" style={{width:"70%"}}>
                <div className='card-body p-4 '>
                     <h5>Total Visitors + Page Views</h5>
                     <h3>22,930</h3>
