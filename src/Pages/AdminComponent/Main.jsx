@@ -1,28 +1,60 @@
-import React from 'react'
-import {Card,Row,Col,ListGroup} from "react-bootstrap";
+import React,{useEffect,useState} from 'react'
+import {Card,Row,Col,ListGroup,Button} from "react-bootstrap";
 import {FaApple} from "react-icons/fa"
 import {MdKeyboardArrowRight} from "react-icons/md"
-import pic13 from "Assets/Images/pic12.jpg"
+import axios from 'axios';
+import Imageapi from "./Imageapi"
 
 
 function Main() {
+
+    const [news, setNews] = useState([])
+
+    useEffect(() => {
+        axios("https://bensite-api.onrender.com/api/news")
+            .then(res=>{
+                setNews(res.data)
+            })
+    },[])
+    
   return (
     <React.Fragment>
       <div className='text-white'>
         <h2 className='main-h2 pb-3'>Widgets</h2>
 
        <section id='cardwidget'>
-        <h4>Card Widget</h4>
+        <h4>News Widget</h4>
 
-            <p>Card widget is created by using existing Bootstrap. card component with . card-img, . card-img-overlay and d-flex utilities.</p>
-            <div className='main-border p-lg-3 p-0' >
-                <center>
-                <Card class="border-0 rounded-0 bg-transparent my-3" style={{width:"18rem"}}>
-                    <Card.Img variant="top" src={pic13} className="rounded-0 side-img py-3 bg-transparent" />
-                </Card>
-                </center>
+            <p>Map Through News API</p>
+            <div className='main-border main p-lg-3 p-0' >
+            {
+                news.map(data=>{
+                    return(
+                        <center className="bg-transparent" key={data._id}>
+                            <Card class="rounded-0 my-3 p-4 text-start" style={{width:"100%",backgroundColor:"rgb(25, 26, 36)"}}>
+                                <Card.Title className='mb-3 text-start'><span className='created'>Title</span> : {data.title}</Card.Title>
+                                <Card.Body className='bg-transparent text-start px-0'>
+                                    <p>{data.News}</p>
+
+                                    <p><span className='created'>Created on </span>: {data.createdAt}</p>
+                                </Card.Body>
+
+                                <div className="d-flex">
+                                    <Button className='w-50 py-3 py-lg-2 rounded-2 me-2' variant='success'>Update</Button>
+                                    <Button className='w-50  py-3 py-lg-2 rounded-2' variant='danger'>Delete</Button>
+                                </div>
+                            </Card>
+
+                            <hr className='card-line' />
+                        </center>
+                        
+                    )
+                })
+            }
             </div>
        </section>
+
+       <Imageapi/>
 
        <section id='listwidget' className='mt-5'>
         <h4>List Widget</h4>

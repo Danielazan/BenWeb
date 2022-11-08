@@ -51,12 +51,27 @@ li{
     border-radius: 5px;
 }
 
+.created{
+    color: rgb(54, 170, 140);
+}
+
 .main-col{
     margin-top: -12%;
 }
 
+.main{
+    overflow-y: scroll;
+    height: 50vh;
+}
+
 .card-body{
     background-color:rgba(65, 77, 87, 0.552);
+}
+
+.card-line{
+    background-color: rgb(54, 170, 140);
+    height: 4px;
+    border: none;
 }
 
 
