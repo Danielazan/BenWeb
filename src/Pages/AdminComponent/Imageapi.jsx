@@ -22,58 +22,28 @@ function Image() {
 
     const [file, setFile] = useState(null)
 
-    // function formN(e){
-    //     setNames(e.target.value)
-    // }
+    const [ImageId,setImageId] = useState("")
 
-    // function formD(e){
-    //     setDescs(e.target.value)
-    // }
-
-    // function formI(e){
-    //     setFiles(e.target.files[0].name) 
-    // }
-
-    // async function post(e) {
-
-    //     e.preventDefault()
-
-    //     const info={
-    //         name: names,
-    //         desc: descs,
-    //         bible:files
-    //     }
-
-    //     const res= await axios.post("https://bensite-api.onrender.com/api/bible",JSON.stringify(info),{
-    //         headers:{
-    //             "ContentType": "application/json",
-    //         }
-    //     })
-
-    //     console.log(res.data)
-        
-    // }
 
     const post = async (e)=>{
 
         e.preventDefault()
-            const info = {
-                name:names,
-                desc:descs,
-                bible:file
-            }
 
-            const res= await axios({
-                method:"post",
-                url:"https://bensite-api.onrender.com/api/bible",
-                data:info,
-                headers:{
-                    "Content-Type":"application/json"
-                }
+            const fd = new FormData();
+            fd.append("name", names)
+            fd.append("desc", descs)
+            fd.append('bible', file, file.name);
+
+            const response = await axios({
+              method:"post",
+              url:"https://bensite-api.onrender.com/api/bible",
+              data:fd,
+              headers:{
+                          "ContentType": "application/json"
+                        }
             })
 
-            const json = res.data
-            console.log(res)
+            console.log(response.data)
 
     }
 
@@ -90,7 +60,13 @@ function Image() {
                     <br />
                     <Form.Control type="text" value={descs} onChange={(e)=>setDescs(e.target.value)} placeholder="Desc"/>
                     <br />
-                    <input type="file" onChange={(e)=>{setFile(e.target.files[0]); console.log(e.target.files[0])}} accept='image/*' name="file" id="" />
+                    <input
+                        className='file-input'
+                        onChange={(e)=>setFile(e.target.files[0])}
+                        type='file'
+                        name='file'
+                        id='file'
+                        />
                     <br /> <br />
                     <input type="submit" onClick={post} className="px-3 py-2" value="Submit" /> <br /><br />
 
